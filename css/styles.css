@@ -1,0 +1,173 @@
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.recipe-img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.dark-mode {
+    background-color: #333;
+    color: #f8f9fa;
+}
+
+.dark-mode .navbar {
+    background-color: #222 !important;
+}
+
+.dark-mode .navbar-light .navbar-brand,
+.dark-mode .navbar-light .navbar-nav .nav-link {
+    color: #f8f9fa;
+}
+
+.dark-mode .card {
+    background-color: #444;
+    color: #f8f9fa;
+}
+
+.dark-mode .modal-content {
+    background-color: #444;
+    color: #f8f9fa;
+}
+
+.favorite-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 50%;
+    padding: 5px 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.favorite-btn:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.favorite-btn i {
+    color: #dc3545;
+}
+
+.pagination .page-link {
+    cursor: pointer;
+}
+
+.notification-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 9999;
+}
+
+.notification {
+    background-color: #f8f9fa;
+    border-left: 4px solid #007bff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    color: #333;
+    font-size: 14px;
+    margin-bottom: 10px;
+    max-width: 300px;
+    opacity: 0;
+    padding: 15px 20px;
+    transform: translateY(-20px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.notification-info {
+    border-left-color: #007bff;
+}
+
+.notification-success {
+    border-left-color: #28a745;
+}
+
+.notification-warning {
+    border-left-color: #ffc107;
+}
+
+.notification-error {
+    border-left-color: #dc3545;
+}
+
+
+
+body, .navbar, .card, .modal-content, .form-control, .btn {
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+
+
+
+
+
+.favorite-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.favorite-btn i {
+    color: #ccc;
+    transition: all 0.3s ease;
+}
+
+.favorite-btn.active i {
+    color: #ff4136;
+}
+
+.favorite-btn:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.favorite-btn:hover i {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.final-light {
+    color: rgb(54, 54, 54);
+    transition: 0.3s;
+}
